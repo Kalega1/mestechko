@@ -12,48 +12,16 @@
 
 <body>
     <header>
-        <a href="#top"><img src="#" alt="icon"></a>
-        <a href="#place">Любимое место</a>
-        <a href="#about">Об игре</a>
-        <a href="#news">Обновления и новости</a>
-        <a href="#contacts">Контакты</a>
-    
-        <div><!--Кнопка Регистрации-->
-            <button data-modal="modal-one">Регистрация</button>
-    
-        <div class="modal" id="modal-one">
-          <div class="modal-bg modal-exit"></div>
-          <div class="modal-container">
-            <form class="form-registration" action="/action_page.php" method="post">
-              <h1>Регистрация</h1>
-              <label for="fname">E-Mail</label>
-    
-              <input type="text" id="fname" name="name" /><br />
-    
-              <label for="lname">Пароль</label>
-    
-              <input type="text" id="lname" name="lastname" /><br />
-              <label for="rpassword">Повторите Пароль</label>
-    
-              <input type="text" id="lname" name="lastname" /><br />
-              <div class="enter-with">
-                <p>Войти с помощью</p>
-                <a href="#"><img src="Registration-img/VK.svg" alt="" /></a>
-              </div>
-    
-              <input class="submit-btn" type="submit" value="Регистрация" />
-            </form>
-            <button class="modal-close modal-exit">X</button>
-          </div>
-        </div>
+        <nav>
+            <a href="#top"><img src="/img/logo.svg" alt="icon"></a>
+            <a href="#place">Любимое место</a> 
+            <a href="#about">Об игре</a>
+            <a href="#news">Новости и обновления</a>
+            <a href="#contacts">Контакты</a>
             
-           </div>
-       <div><!--Кнопка Логин-->
+            <button class="btn-2nd" data-modal="modal-two">Вход</button>
 
-
-        <button data-modal="modal-two">Вход</button>
-
-    <div class="modal" id="modal-two">
+                  <div class="modal" id="modal-two">
       <div class="modal-bg modal-exit"></div>
       <div class="modal-container">
         <form class="form-registration" action="/action_page.php" method="post">
@@ -77,55 +45,91 @@
         </form>
         <button class="modal-close modal-exit">X</button>
       </div>
-    </div>
-       </div>
-
-        <h1>Местечко</h1>
-        <h2>Браузерная текстовая ММО-игра</h2>
-        <p>текст (содержание будет оформлено позднее) кратко указывающий на наши преимущества</p>
-        <button >Регистрация</button>
+                  </div>
+            <button сlass="btn-1st"  data-modal="modal-one">Регистрация</button>
+                 <div class="modal" id="modal-one">
+                     <div class="modal-bg modal-exit"></div>
+                     <div class="modal-container">
+                         <form class="form-registration" action="/action_page.php" method="post">
+                            <h1>Регистрация</h1>
+                            <label for="fname">E-Mail</label>
+    
+                            <input type="text" id="fname" name="name" /><br />
+    
+                            <label for="lname">Пароль</label>
+    
+                            <input type="text" id="lname" name="lastname" /><br />
+              <label for="rpassword">Повторите Пароль</label>
+    
+              <input type="text" id="lname" name="lastname" /><br />
+              <div class="enter-with">
+                <p>Войти с помощью</p>
+                <a href="#"><img src="Registration-img/VK.svg" alt="" /></a>
+              </div>
+    
+              <input class="submit-btn" type="submit" value="Регистрация" />
+                        </form>
+                        <button class="modal-close modal-exit">X</button>
+                    </div>
+                </div>
+        </nav>
     </header>
 
 
-<main>
-    <section1>
-        <h2 id="place">Любимое место</h2>        
-        <figure>
-            <img src="#" alt="place1">
-            <figcaption>
-                <h3>Подарки</h3>
-                <p>При регистрации и ежедневном входе вас ждут щедрые подарки</p>
-            </figcaption>
-        </figure>        
-        
-        <figure>
-            <img src="#" alt="place2">
-            <figcaption>
-                <h3>Отдых</h3>
-                <p>Мы ценим ваше время, находитесь в игре сколько будет комфортно</p>
-            </figcaption>
-        </figure>        
-        
-        <figure>
-            <img src="#" alt="place3">
-            <figcaption>
-                <h3>Общение</h3>
-                <p>Находите друзей, общайтесь, играйте вместе</p>
-            </figcaption>
-        </figure>
-    </section1>
+    <main>
+        <section class="top">
+            <h1>Местечко</h1>
+            <p>Браузерная текстовая ММО-игра</p>
+            <p style="width: 924 px;">текст (содержание будет оформлено позднее) кратко указывающий на наши преимущества
+            <br>
+            <button class="btn-1st">Регистрация</button></p>
+        </section>
 
-    <section2>
-        <h2 id="about">Об игре</h2>
+        <section class="place" id="place">
+            <h2>Любимое место</h2>
+            <figure>
+                <img class="place-img" src="/img/place1.png" alt="place1">
+                <figcaption>
+                    <h3>Первооткрыватель</h3>
+                    <p>Стань одним из первых жителей Местечка</p>
+                </figcaption>
+            </figure>        
+            
+            <figure>
+                <img class="place-img" src="/img/place2.png" alt="place2">
+                <figcaption>
+                    <h3>Отдых</h3>
+                    <p>Отдых - мы ценим ваше время</p>
+                </figcaption>
+            </figure>        
+            
+            <figure>
+                <img class="place-img" src="/img/place3.png" alt="place3">
+                <figcaption>
+                    <h3>Активность</h3>
+                    <p>События в игре происходят даже при закрытом браузере</p>
+                </figcaption>
+            </figure>        
+        
+            <figure>
+                <img class="place-img" src="/img/place4.png" alt="place4">
+                <figcaption>
+                    <h3>Простота</h3>
+                    <p>Нет высоких системных требований к твоему компьютеру</p>
+                </figcaption>
+            </figure>
+        </section>
+
+        <section class="about" id="about">
+        <h2>Об игре</h2>
         <p>Местечко – это виртуальное пространство для отдыха от внешних раздражителей, с комфортным игровым ритмом и приятным дружеским общением в общем чате. Отличительной чертой является нацеленность на создание атмосферы отдыха, расслабления и уюта, в отличие от других аналогичных игр. А демократичный формат браузерной игры не съедает твоё время, трафик и ресурсы компьютера. Достаточно пройти простую регистрацию. Ты с нами?</p>
-    </section2>
+        </section>
 
-    <section3>
-
-        <h2 id="news">Новости и обновления</h2>
+        <section class="news" id="news">   
+        <h2>Новости и обновления</h2>
                 
         <figure>
-            <img src="#" alt="news1">
+            <img class="news-img" src="#" alt="news1">
             <figcaption>
                 <h3>Заголовок новости или обновления</h3>
                 <p>описание новости краткий анонс, шо там такое интересное и зачем и почему надо этим увлеченно интересоваться</p>
@@ -133,7 +137,7 @@
             </figcaption>
         </figure>
         <figure>
-            <img src="#" alt="news2">
+            <img class="news-img" src="#" alt="news2">
             <figcaption>
                 <h3>Заголовок новости или обновления</h3>
                 <p>описание новости краткий анонс, шо там такое интересное и зачем и почему надо этим увлеченно интересоваться</p>
@@ -141,7 +145,7 @@
             </figcaption>
         </figure>
         <figure>
-            <img src="#" alt="news3">
+            <img class="news-img" src="#" alt="news3">
             <figcaption>
                 <h3>Заголовок новости или обновления</h3>
                 <p>описание новости краткий анонс, шо там такое интересное и зачем и почему надо этим увлеченно интересоваться</p>
@@ -149,7 +153,7 @@
             </figcaption>
         </figure>
         <figure>
-            <img src="#" alt="news4">
+            <img class="news-img" src="#" alt="news4">
             <figcaption>
                 <h3>Заголовок новости или обновления</h3>
                 <p>описание новости краткий анонс, шо там такое интересное и зачем и почему надо этим увлеченно интересоваться</p>
@@ -157,7 +161,7 @@
             </figcaption>
         </figure>
         <figure>
-            <img src="#" alt="news5">
+            <img class="news-img" src="#" alt="news5">
             <figcaption>
                 <h3>Заголовок новости или обновления</h3>
                 <p>описание новости краткий анонс, шо там такое интересное и зачем и почему надо этим увлеченно интересоваться</p>
@@ -165,49 +169,39 @@
             </figcaption>
         </figure>
         <figure>
-            <img src="#" alt="news6">
+            <img class="news-img" src="#" alt="news6">
             <figcaption>
                 <h3>Заголовок новости или обновления</h3>
                 <p>описание новости краткий анонс, шо там такое интересное и зачем и почему надо этим увлеченно интересоваться</p>
                 <a href="#">подробнее</a>
             </figcaption>
         </figure>
-    </section3>
+        </section>
 
-    <a href="#top">Наверх</a>
-</main>
+        <a href="#top">Наверх</a>
+    </main>
 
 
     <footer>
         <h2 id="contacts">Наши контакты</h2>
+        <section>
+            <a href="#" target="_blank">
+            <img src="/img/VK.svg" alt="vk"></a>
 
-        <ul>
-            <li>
-                <a href="#" target="_blank">
-                    <img src="#" alt="vk">
-                </a>
-            </li>
-            <li>
-                <a href="#" target="_blank">
-                    <img src="#" alt="tg">
-                </a>
-            </li>
-            <li>
-                <a href="#" target="_blank">
-                    <img src="#" alt="mail">
-                </a>
-            </li>
-            <li>
-                <a href="#" target="_blank">
-                    <img src="#" alt="dc">
-                </a>
-            </li>
-        </ul>
+            <a href="#" target="_blank">
+            <img src="/img/Tg.svg" alt="tg"></a>
 
+            <a href="#" target="_blank">
+            <img src="/img/Mail.svg" alt="mail"></a>
+
+            <a href="#" target="_blank">
+            <img src="/img/Dc.svg" alt="dc"></a>
+        </section>
+        
         <p>Местечко 2022 - 2023</p>
         <p>design by "Studio Anas Tasia"</p>   
     </footer>
+    <script src="script.js"></script>
 </body>
-<script src="./script/Registration.js"></script>
-<script src="./script/LogIn.js"></script>
+
 </html>

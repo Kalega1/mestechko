@@ -1,16 +1,16 @@
-class MyString{
-  constructor(){
+const modals = document.querySelectorAll('[data-modal]');
 
-  }
-  reverse(str){
-    let reverse = ''
-    let i = str.length - 1
-    for (i;i >=0;i--){
-        reversStr +=str[i]
-    }
-    return reversStr
-  }
-  ucFirst(str){
-    return str[0].toUpperCase
-    }
-}
+modals.forEach(function (trigger) {
+  trigger.addEventListener("click", function (event) {
+    event.preventDefault();
+    const modal = document.getElementById(trigger.dataset.modal);
+    modal.classList.add("open");
+    const exits = modal.querySelectorAll(".modal-exit");
+    exits.forEach(function (exit) {
+      exit.addEventListener("click", function (event) {
+        event.preventDefault();
+        modal.classList.remove("open");
+      });
+    });
+  });
+});
