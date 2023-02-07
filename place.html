@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Местечко</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/img/favicon.png" type="image/png" >
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#top"><img src="/img/logo.svg" alt="icon"></a>
+            <a href="#place">Любимое место</a> 
+            <a href="#about">Об игре</a>
+            <a href="#news">Новости и обновления</a>
+            <a href="#contacts">Контакты</a>
+            
+            <button class="btn-2nd" data-modal="modal-two">Вход</button>
+
+                  <div class="modal" id="modal-two">
+      <div class="modal-bg modal-exit"></div>
+      <div class="modal-container">
+        <form class="form-registration" action="/action_page.php" method="post">
+          <h1>Вход</h1>
+          <label for="fname">E-Mail</label>
+
+          <input type="text" id="fname1" name="name" /><br />
+
+          <label for="lname">Пароль</label>
+
+          <!-- <input type="text" id="lname" name="lastname" /><br />
+          <label for="rpassword">Повторите Пароль</label> -->
+
+          <input type="text" id="lname1" name="lastname" /><br />
+          <div class="enter-with">
+            <p>Войти с помощью</p>
+            <a href="#"><img src="LogIn-img/VK.svg" alt="" /></a>
+          </div>
+
+          <input class="submit-btn" type="submit" value="Вход" />
+        </form>
+        <button class="modal-close modal-exit">X</button>
+      </div>
+                  </div>
+            <button сlass="btn-1st"  data-modal="modal-one">Регистрация</button>
+                 <div class="modal" id="modal-one">
+                     <div class="modal-bg modal-exit"></div>
+                     <div class="modal-container">
+                         <form class="form-registration" action="/action_page.php" method="post">
+                            <h1>Регистрация</h1>
+                            <label for="fname">E-Mail</label>
+    
+                            <input type="text" id="fname" name="name" /><br />
+    
+                            <label for="lname">Пароль</label>
+    
+                            <input type="text" id="lname" name="lastname" /><br />
+              <label for="rpassword">Повторите Пароль</label>
+    
+              <input type="text" id="lname" name="lastname" /><br />
+              <div class="enter-with">
+                <p>Войти с помощью</p>
+                <a href="#"><img src="Registration-img/VK.svg" alt="" /></a>
+              </div>
+    
+              <input class="submit-btn" type="submit" value="Регистрация" />
+                        </form>
+                        <button class="modal-close modal-exit">X</button>
+                    </div>
+                </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="top">
+            <h1>Местечко</h1>
+            <p>Браузерная текстовая ММО-игра</p>
+            <p style="width: 924 px;">текст (содержание будет оформлено позднее) кратко указывающий на наши преимущества
+            <br>
+            <button class="btn-1st">Регистрация</button></p>
+        </section>
+
+        <section class="place" id="place">
+            <h2>Любимое место</h2>
+            <figure>
+                <img class="place-img" src="/img/place1.png" alt="place1">
+                <figcaption>
+                    <h3>Первооткрыватель</h3>
+                    <p>Стань одним из первых жителей Местечка</p>
+                </figcaption>
+            </figure>        
+            
+            <figure>
+                <img class="place-img" src="/img/place2.png" alt="place2">
+                <figcaption>
+                    <h3>Отдых</h3>
+                    <p>Отдых - мы ценим ваше время</p>
+                </figcaption>
+            </figure>        
+            
+            <figure>
+                <img class="place-img" src="/img/place3.png" alt="place3">
+                <figcaption>
+                    <h3>Активность</h3>
+                    <p>События в игре происходят даже при закрытом браузере</p>
+                </figcaption>
+            </figure>        
+        
+            <figure>
+                <img class="place-img" src="/img/place4.png" alt="place4">
+                <figcaption>
+                    <h3>Простота</h3>
+                    <p>Нет высоких системных требований к твоему компьютеру</p>
+                </figcaption>
+            </figure>
+        </section>
+
+        <section class="about" id="about">
+        <h2>Об игре</h2>
+        <p>Местечко – это виртуальное пространство для отдыха от внешних раздражителей, с комфортным игровым ритмом и приятным дружеским общением в общем чате. Отличительной чертой является нацеленность на создание атмосферы отдыха, расслабления и уюта, в отличие от других аналогичных игр. А демократичный формат браузерной игры не съедает твоё время, трафик и ресурсы компьютера. Достаточно пройти простую регистрацию. Ты с нами?</p>
+        </section>
+
+        <section class="news" id="news">   
+        <h2>Новости и обновления</h2>
+                
+        <figure>
+            <img class="news-img" src="#" alt="news1">
+            <figcaption>
+                <h3>Заголовок новости или обновления</h3>
+                <p>описание новости краткий анонс, шо там такое интересное и зачем и почему надо этим увлеченно интересоваться</p>
+                <a href="#">подробнее</a>
+            </figcaption>
+        </figure>
+        <figure>
+            <img class="news-img" src="#" alt="news2">
+            <figcaption>
+                <h3>Заголовок новости или обновления</h3>
+                <p>описание новости краткий анонс, шо там такое интересное и зачем и почему надо этим увлеченно интересоваться</p>
+                <a href="#">подробнее</a>
+            </figcaption>
+        </figure>
+        <figure>
+            <img class="news-img" src="#" alt="news3">
+            <figcaption>
+                <h3>Заголовок новости или обновления</h3>
+                <p>описание новости краткий анонс, шо там такое интересное и зачем и почему надо этим увлеченно интересоваться</p>
+                <a href="#">подробнее</a>
+            </figcaption>
+        </figure>
+        <figure>
+            <img class="news-img" src="#" alt="news4">
+            <figcaption>
+                <h3>Заголовок новости или обновления</h3>
+                <p>описание новости краткий анонс, шо там такое интересное и зачем и почему надо этим увлеченно интересоваться</p>
+                <a href="#">подробнее</a>
+            </figcaption>
+        </figure>
+        <figure>
+            <img class="news-img" src="#" alt="news5">
+            <figcaption>
+                <h3>Заголовок новости или обновления</h3>
+                <p>описание новости краткий анонс, шо там такое интересное и зачем и почему надо этим увлеченно интересоваться</p>
+                <a href="#">подробнее</a>
+            </figcaption>
+        </figure>
+        <figure>
+            <img class="news-img" src="#" alt="news6">
+            <figcaption>
+                <h3>Заголовок новости или обновления</h3>
+                <p>описание новости краткий анонс, шо там такое интересное и зачем и почему надо этим увлеченно интересоваться</p>
+                <a href="#">подробнее</a>
+            </figcaption>
+        </figure>
+        </section>
+
+        <a href="#top">Наверх</a>
+    </main>
+
+
+    <footer>
+        <h2 id="contacts">Наши контакты</h2>
+        <section>
+            <a href="#" target="_blank">
+            <img src="/img/VK.svg" alt="vk"></a>
+
+            <a href="#" target="_blank">
+            <img src="/img/Tg.svg" alt="tg"></a>
+
+            <a href="#" target="_blank">
+            <img src="/img/Mail.svg" alt="mail"></a>
+
+            <a href="#" target="_blank">
+            <img src="/img/Dc.svg" alt="dc"></a>
+        </section>
+        
+        <p>Местечко 2022 - 2023</p>
+        <p>design by "Studio Anas Tasia"</p>   
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
