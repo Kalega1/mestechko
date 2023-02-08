@@ -91,7 +91,7 @@
     </header>
 
 
-    <main>
+    <main class="main">
         <section class="top">
             <h1>Местечко</h1>
             <p>Браузерная текстовая ММО-игра</p>
@@ -103,37 +103,51 @@
 
         <section class="place" id="place">
             <h2>Любимое место</h2>
-            <figure>
-                <img class="place__img" src="/img/place1.png" alt="place1">
-                <figcaption>
-                    <h3>Первооткрыватель</h3>
-                    <p>Стань одним из первых жителей Местечка</p>
-                </figcaption>
-            </figure>
+            <ul class="place__list">
+                <li class="place__item">
+                    <figure class="place__fig">
+                        <img class="place__img" src="/img/place1.png" alt="place1">
+                        <figcaption>
+                            <h3 class="place__fig__h3">Первооткрыватель</h3>
+                            <p class="place__fig__p">Стань одним из первых жителей Местечка</p>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="place__item">
+                    <figure class="place__fig">
+                        <img class="place__img" src="/img/place2.png" alt="place2">
+                        <figcaption class="place__fig">
+                            <h3 class="place__fig__h3">Отдых</h3>
+                            <p class="place__fig__p">Отдых - мы ценим ваше время</p>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="place__item">
 
-            <figure>
-                <img class="place__img" src="/img/place2.png" alt="place2">
-                <figcaption>
-                    <h3>Отдых</h3>
-                    <p>Отдых - мы ценим ваше время</p>
-                </figcaption>
-            </figure>
+                    <figure class="place__fig">
+                        <img class="place__img" src="/img/place3.png" alt="place3">
+                        <figcaption class="place__fig">
+                            <h3 class="place__fig__h3">Активность</h3>
+                            <p class="place__fig__p">События в игре происходят даже при закрытом браузере</p>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="place__item">
+                    <figure class="place__fig">
+                        <img class="place__img" src="/img/place4.png" alt="place4">
+                        <figcaption class="place__fig">
+                            <h3 class="place__fig__h3">Простота</h3>
+                            <p class="place__fig__p">Нет высоких системных требований к твоему компьютеру</p>
+                        </figcaption>
+                    </figure>
+                </li>
+            </ul>
 
-            <figure>
-                <img class="place__img" src="/img/place3.png" alt="place3">
-                <figcaption>
-                    <h3>Активность</h3>
-                    <p>События в игре происходят даже при закрытом браузере</p>
-                </figcaption>
-            </figure>
 
-            <figure>
-                <img class="place__img" src="/img/place4.png" alt="place4">
-                <figcaption>
-                    <h3>Простота</h3>
-                    <p>Нет высоких системных требований к твоему компьютеру</p>
-                </figcaption>
-            </figure>
+
+
+
+
         </section>
 
         <section class="about" id="about">
