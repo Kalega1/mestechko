@@ -97,7 +97,25 @@
             <p class="top__p1">Браузерная текстовая ММО-игра</p>
             <p class="top__p2">текст (содержание будет оформлено позднее) кратко указывающий на наши преимущества
             </p>
-            <button class="btn__1st">Регистрация</button>
+            <button data-modal="modal-one" class="btn__1st" >Регистрация</button>
+                                <div class="modal" id="modal-one">
+                                    <div class="modal-bg modal-exit"></div>
+                                    <div class="modal-container">
+                                        <form class="form-registration" action="/action_page.php" method="post">
+                                            <h1>Регистрация</h1>
+                                            <label for="fname">E-Mail</label>
+                                            <input type="text" id="fname" name="name" /><br />
+                                            <label for="lname">Пароль</label>
+                                            <input type="text" id="lname" name="lastname" /><br />
+                                            <label for="rpassword">Повторите Пароль</label>
+                                            <input type="text" id="lname" name="lastname" /><br />
+                                            <div class="enter-with">
+                                                <p>Войти с помощью</p>
+                                                <a href="#"><img src="Registration-img/VK.svg" alt="" /></a>
+                                            </div>
+                                            <input class="submit-btn" type="submit" value="Регистрация" />
+                                        </form>
+                                        <button class="modal-close modal-exit">X</button>
         </section>
 
         <section class="place" id="place">
