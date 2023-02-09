@@ -176,20 +176,21 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   src : url("./fonts/piazzolla-v29-latin_cyrillic-600.woff2") format('woff2'), url("./fonts/piazzolla-v29-latin_cyrillic-600.woff") format('woff');
   }
   html {
-  box-sizing : border-box;
-  }
+    box-sizing : border-box;
+    }
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
   *, *::before, *::after {
   box-sizing : inherit;
   }
-    body {
+  body {
     font-family: 'Montserrat';
     font-style: normal;
     font-size: 24px;
     line-height: 29px;
-    font-weight: n;
+    font-weight: normal;
     color: #222;
-    margin-left: 63px;
-    padding: px;
 }
   .wrapper {
   margin : 0 auto;
@@ -198,12 +199,10 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     background-color: #FFFEFE;
     position: fixed;
     top: 0;
-    left: 24px;
     width: 90%;
-    margin-inline: 50px;
     background: rgb(255, 255, 255, 0.9);
     border-radius: 40px;
-}
+  }
   .header__wrapper {
   display : flex;
   flex-wrap : wrap;
@@ -289,13 +288,12 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   }
   .top {
     width: 100%;
-    height: 100vh;
-    background: url(img/fon.svg);
-    max-width: 90%;
+    height: auto;
+    background-image: url(img/fon.svg);
     align-self: auto;
     background-size: cover;
     padding-top: 230px;
-}
+  }
   .btn__1st {
   width : 210px;
   height : 56.26px;
@@ -543,3 +541,17 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   .top__p2 {
   margin-bottom : 24px;
   }
+
+
+  @media only screen and (max-width: 600px) {
+    .header__list__l {
+        display: none;
+    }
+  }
+
+
+  @media screen and (max-width: 600px) {
+    h1 {
+        font-size: 1.2em;
+    }
+}
