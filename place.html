@@ -17,7 +17,7 @@
             <div class="header__wrapper">
                 <nav class="header__nav">
                     <ul class="header__list">
-                        <ul class="header__list">
+                        <ul class="header__list__l">
                             <li class="header__item">
                                 <a href="place.html">
                                     <img src="./img/logo.png" alt="Местечко" style="width: 78px;">
@@ -36,7 +36,7 @@
                                 <a href="#contacts" class="header__link">Контакты</a>
                             </li>
                         </ul>
-                        <ul class="header__list">
+                        <ul class="header__list__b">
                             <li class="header__btns">
                                 <button class="btn__2nd" data-modal="modal-two">Вход</button>
                                 <div class="modal" id="modal-two">
@@ -93,16 +93,15 @@
 
     <main class="main">
         <section class="top">
-            <h1>Местечко</h1>
-            <p>Браузерная текстовая ММО-игра</p>
-            <p style="width: 924 px;">текст (содержание будет оформлено позднее) кратко указывающий на наши преимущества
-                <br>
-                <button class="btn__1st">Регистрация</button>
+            <h1 class="top__h1">Местечко</h1>
+            <p class="top__p1">Браузерная текстовая ММО-игра</p>
+            <p class="top__p2">текст (содержание будет оформлено позднее) кратко указывающий на наши преимущества
             </p>
+            <button class="btn__1st">Регистрация</button>
         </section>
 
         <section class="place" id="place">
-            <h2>Любимое место</h2>
+            <h2 class="place__h2">Любимое место</h2>
             <ul class="place__list">
                 <li class="place__item">
                     <figure class="place__fig">
@@ -151,8 +150,9 @@
         </section>
 
         <section class="about" id="about">
-            <h2>Об игре</h2>
-            <p>Местечко – это виртуальное пространство для отдыха от внешних раздражителей, с комфортным игровым ритмом
+            <h2 class="about__h2">Об игре</h2>
+            <p class="about__p">Местечко – это виртуальное пространство для отдыха от внешних раздражителей, с
+                комфортным игровым ритмом
                 и приятным дружеским общением в общем чате. Отличительной чертой является нацеленность на создание
                 атмосферы отдыха, расслабления и уюта, в отличие от других аналогичных игр. А демократичный формат
                 браузерной игры не съедает твоё время, трафик и ресурсы компьютера. Достаточно пройти простую
@@ -160,86 +160,127 @@
         </section>
 
         <section class="news" id="news">
-            <h2>Новости и обновления</h2>
-
-            <figure>
-                <img class="news__img" src="#" alt="news1">
-                <figcaption>
-                    <h3>Заголовок новости или обновления</h3>
-                    <p>описание новости краткий анонс, шо там такое интересное и зачем и почему надо этим увлеченно
-                        интересоваться</p>
-                    <a href="#" class="news__href">подробнее</a>
-                </figcaption>
-            </figure>
-            <figure>
-                <img class="news__img" src="#" alt="news2">
-                <figcaption>
-                    <h3>Заголовок новости или обновления</h3>
-                    <p>описание новости краткий анонс, шо там такое интересное и зачем и почему надо этим увлеченно
-                        интересоваться</p>
-                    <a href="#" class="news__href">подробнее</a>
-                </figcaption>
-            </figure>
-            <figure>
-                <img class="news__img" src="#" alt="news3">
-                <figcaption>
-                    <h3>Заголовок новости или обновления</h3>
-                    <p>описание новости краткий анонс, шо там такое интересное и зачем и почему надо этим увлеченно
-                        интересоваться</p>
-                    <a href="#" class="news__href">подробнее</a>
-                </figcaption>
-            </figure>
-            <figure>
-                <img class="news__img" src="#" alt="news4">
-                <figcaption>
-                    <h3>Заголовок новости или обновления</h3>
-                    <p>описание новости краткий анонс, шо там такое интересное и зачем и почему надо этим увлеченно
-                        интересоваться</p>
-                    <a href="#" class="news__href">подробнее</a>
-                </figcaption>
-            </figure>
-            <figure>
-                <img class="news__img" src="#" alt="news5">
-                <figcaption>
-                    <h3>Заголовок новости или обновления</h3>
-                    <p>описание новости краткий анонс, шо там такое интересное и зачем и почему надо этим увлеченно
-                        интересоваться</p>
-                    <a href="#" class="news__href">подробнее</a>
-                </figcaption>
-            </figure>
-            <figure>
-                <img class="news__img" src="#" alt="news6">
-                <figcaption>
-                    <h3>Заголовок новости или обновления</h3>
-                    <p>описание новости краткий анонс, шо там такое интересное и зачем и почему надо этим увлеченно
-                        интересоваться</p>
-                    <a href="#" class="news__href">подробнее</a>
-                </figcaption>
-            </figure>
+            <div class="wrapper">
+                <div class="news__wrapper">
+                    <h2 class="news__h2">Новости и обновления</h2>
+                    <ul class="news__list">
+                        <li class="news__item">
+                            <figure class="news__fig">
+                                <img class="news__img" src="http://placehold.it/330x285/E4FAEE" alt="news1">
+                                <figcaption>
+                                    <h3 class="news__h3">Заголовок новости или обновления</h3>
+                                    <p class="news__p">описание новости краткий анонс, шо там такое интересное и зачем и
+                                        почему надо этим увлеченно
+                                        интересоваться</p>
+                                    <div class="news__link">
+                                        <a href="#" class="news__href">подробнее</a>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="news__item">
+                            <figure class="news__fig">
+                                <img class="news__img" src="http://placehold.it/330x285/E4FAEE" alt="news2">
+                                <figcaption>
+                                    <h3 class="news__h3">Заголовок новости или обновления</h3>
+                                    <p class="news__p">описание новости краткий анонс, шо там такое интересное и зачем и
+                                        почему надо этим увлеченно
+                                        интересоваться</p>
+                                    <div class="news__link">
+                                        <a href="#" class="news__href">подробнее</a>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="news__item">
+                            <figure class="news__fig">
+                                <img class="news__img" src="http://placehold.it/330x285/E4FAEE" alt="news3">
+                                <figcaption>
+                                    <h3 class="news__h3">Заголовок новости или обновления</h3>
+                                    <p class="news__p">описание новости краткий анонс, шо там такое интересное и зачем и
+                                        почему надо этим увлеченно
+                                        интересоваться</p>
+                                    <div class="news__link">
+                                        <a href="#" class="news__href">подробнее</a>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="news__item">
+                            <figure class="news__fig">
+                                <img class="news__img" src="http://placehold.it/330x285/E4FAEE" alt="news4">
+                                <figcaption>
+                                    <h3 class="news__h3">Заголовок новости или обновления</h3>
+                                    <p class="news__p">описание новости краткий анонс, шо там такое интересное и зачем и
+                                        почему надо этим увлеченно
+                                        интересоваться</p>
+                                    <div class="news__link">
+                                        <a href="#" class="news__href">подробнее</a>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="news__item">
+                            <figure class="news__fig">
+                                <img class="news__img" src="http://placehold.it/330x285/E4FAEE" alt="news5">
+                                <figcaption>
+                                    <h3 class="news__h3">Заголовок новости или обновления</h3>
+                                    <p class="news__p">описание новости краткий анонс, шо там такое интересное и зачем и
+                                        почему надо этим увлеченно
+                                        интересоваться</p>
+                                    <div class="news__link">
+                                        <a href="#" class="news__href">подробнее</a>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="news__item">
+                            <figure class="news__fig">
+                                <img class="news__img" src="http://placehold.it/330x285/E4FAEE" alt="news6">
+                                <figcaption>
+                                    <h3 class="news__h3">Заголовок новости или обновления</h3>
+                                    <p class="news__p">описание новости краткий анонс, шо там такое интересное и зачем и
+                                        почему надо этим увлеченно
+                                        интересоваться</p>
+                                    <div class="news__link">
+                                        <a href="#" class="news__href">подробнее</a>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
-        <a href="#top">Наверх</a>
+        <div class="up">
+            <a href="#top" class="up__link">Наверх</a>
+        </div>
+
     </main>
 
 
-    <footer>
-        <h2 id="contacts">Наши контакты</h2>
-        <section>
-            <a href="#" target="_blank">
-                <img src="/img/VK.svg" alt="vk"></a>
+    <footer class="foot">
+        <h2 id="contacts" class="foot__h2">Наши контакты</h2>
+        <section class="foot__sec">
+            <a href="#" target="_blank" class="foot__link">
+                <img src="/img/VK.svg" alt="vk" class="foot__img"></a>
 
-            <a href="#" target="_blank">
-                <img src="/img/Tg.svg" alt="tg"></a>
+            <a href="#" target="_blank" class="foot__link">
+                <img src="/img/Tg.svg" alt="tg" class="foot__img"></a>
 
-            <a href="#" target="_blank">
-                <img src="/img/Mail.svg" alt="mail"></a>
+            <a href="#" target="_blank" class="foot__link">
+                <img src="/img/Mail.svg" alt="mail" class="foot__img"></a>
 
-            <a href="#" target="_blank">
-                <img src="/img/Dc.svg" alt="dc"></a>
+            <a href="#" target="_blank" class="foot__link">
+                <img src="/img/Dc.svg" alt="dc" class="foot__img"></a>
         </section>
 
-        <p>Местечко 2022 - 2023</p>
-        <p>design by "Studio Anas Tasia"</p>
+        <div class="foot__dis">
+            <p>Местечко 2022 - 2023</p>
+            <p>design by "Studio Anas Tasia"</p>
+        </div>
+
     </footer>
     <script src="script.js"></script>
 </body>
