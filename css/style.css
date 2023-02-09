@@ -679,7 +679,7 @@ p {
 .top {
   width: 100%;
   height: 100vh;
-  background: url(/img/fon.svg) no-repeat center;
+  background: url(/img/fon.svg)
   background-size: cover;
   padding-top: 330px;
   margin-bottom: 8px;
@@ -1015,6 +1015,7 @@ p {
 
 .top {
   text-align: center;
+  margin-top: 128px;
 }
 
 .top__h1 {
