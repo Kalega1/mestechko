@@ -563,20 +563,24 @@ body {
   background-color: #FFFEFE;
   position: fixed;
   top: 0;
-  left: 0;
+  left: 24px;
   width: 90%;
   margin-inline: 50px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 40px
 }
 
 .header__wrapper {
 padding-top: 10px;
 display: flex;
 flex-wrap: wrap;
+
 }
 
 .header__nav {
 width: 200vh;
-margin: 0;
+margin: 20px;
+
 }
 
 .header__list {
