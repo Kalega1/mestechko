@@ -564,73 +564,72 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  margin-inline: 60px;
-
+  width: 90%;
+  margin-inline: 50px;
 }
 
-/* .header__wrapper {
-  padding-top: 34 px;
-  display: flex;
-  flex-wrap: wrap;
-} */
+.header__wrapper {
+padding-top: 10px;
+display: flex;
+flex-wrap: wrap;
+}
 
 .header__nav {
-  width: 100vh;
-  margin: 0;
+width: 200vh;
+margin: 0;
 }
 
 .header__list {
-  display: flex;
-  flex-wrap: wrap;
-  list-style-type: none;
-  justify-content: space-between;
+display: flex;
+flex-wrap: wrap;
+list-style-type: none;
+justify-content: space-between;
 }
 
 .header__list__l {
-  display: flex;
-  flex-wrap: wrap;
-  list-style-type: none;
-  justify-content: space-between;
-  align-items: center;
+display: flex;
+flex-wrap: wrap;
+list-style-type: none;
+justify-content: space-between;
+align-items: center;
 
 }
 
 .header__list__b {
-  display: flex;
-  flex-wrap: wrap;
-  list-style-type: none;
+display: flex;
+flex-wrap: wrap;
+list-style-type: none;
 }
 
 .header__item {
-  margin-left: 16px;
-  vertical-align: middle;
-  /*не работает..*/
+margin-left: 30px;
+vertical-align: middle;
+/*не работает..*/
 }
 
 .header__item:first-child {
-  margin-left: 0;
+margin-left: 0;
 }
 
 .header__btns {
-  margin-right: 25px;
+margin-right: 25px;
 }
 
 .header__btns:last-child {
-  margin-right: 0;
+margin-right: 0;
 }
 
 .header__link {
-  font-size: 24px;
-  line-height: 29px;
-  color: #1E1E1E;
-  text-decoration: none;
+font-size: 20px;
+line-height: 29px;
+color: #1E1E1E;
+text-decoration: none;
 }
 
 .header__link:hover,
 .header__link:focus,
 .header__link:active {
-  opacity: .80;
+opacity: .80;
 }
 
 /*Хедер конец*/
@@ -683,7 +682,7 @@ p {
 }
 
 .btn__1st {
-  width: 240px;
+  width: 210px;
   height: 56.26px;
   left: 342px;
   top: 294.34px;
@@ -698,7 +697,7 @@ p {
 }
 
 .btn__2nd {
-  width: 183px;
+  width: 140px;
   height: 56px;
   left: 0px;
   top: 0px;
