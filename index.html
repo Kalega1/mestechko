@@ -11,16 +11,17 @@
 </head>
 
 <body>
+    
     <header class="header">
+        <a href="place.html">
+            <img src="./img/logo.png" alt="Местечко" style="width: 78px;">
+        </a>
         <div class="wrapper">
             <div class="header__wrapper">
                 <nav class="header__nav">
                     <ul class="header__list">
                         <ul class="header__list__l">
-                            <li class="header__item">
-                                <a href="place.html">
-                                    <img src="./img/logo.png" alt="Местечко" style="width: 78px;">
-                                </a>
+                            <li class="header__item1">
                             </li>
                             <li class="header__item">
                                 <a href="#place" class="header__link">Любимое место</a>
@@ -31,56 +32,62 @@
                             <li class="header__item">
                                 <a href="#news" class="header__link">Новости и обновления</a>
                             </li>
+                            <div class="dropdown">
+                                <button class="dropbtn">Dropdown</button>
+                                <div class="dropdown-content">
+                                    <a href="#place" class="header__link">Любимое место</a>
+                                    <a href="#about" class="header__link">Об игре</a>
+                                    <a href="#news" class="header__link">Новости и обновления</a>
+                                    <a href="#contacts" class="header__link">Контакты</a>
+                                </div>
+                              </div>
                             <li class="header__item">
-                                <a href="#contacts" class="header__link">Контакты</a>
-                            </li>
-                        </ul>
-                        <ul class="header__list__b">
-                            <li class="header__btns">
-                                <button class="btn__2nd" data-modal="modal-two">Вход</button>
-                                <div class="modal" id="modal-two">
-                                    <div class="modal-bg modal-exit"></div>
-                                    <div class="modal-container">
-                                        <form class="form-registration" action="/action_page.php" method="post">
-                                            <h1>Вход</h1>
-                                            <label for="fname">E-Mail</label>
-                                            <input type="text" id="fname1" name="name" /><br />
-                                            <label for="lname">Пароль</label>
-                                            <input type="text" id="lname" name="lastname" /><br />
+                                <li class="header__btns">
+                                    <button class="btn__2nd" data-modal="modal-two">Вход</button>
+                                    <div class="modal" id="modal-two">
+                                        <div class="modal-bg modal-exit"></div>
+                                        <div class="modal-container">
+                                            <form class="form-registration" action="/action_page.php" method="post">
+                                                <h1>Вход</h1>
+                                                <label for="fname">E-Mail</label>
+                                                <input type="text" id="fname1" name="name" /><br />
+                                                <label for="lname">Пароль</label>
+                                                <input type="text" id="lname" name="lastname" /><br />
+                                                    <label for="rpassword">Повторите Пароль</label>
+                                                <input type="text" id="lname1" name="lastname" /><br />
+                                                <div class="enter-with">
+                                                    <p>Войти с помощью</p>
+                                                    <a href="#"><img src="./img/VK.svg" alt="" /></a>
+                                                </div>
+                                                <input class="submit-btn" type="submit" value="Вход" />
+                                            </form>
+                                            <button class="modal-close modal-exit">X</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="header__btns">
+                                    <button data-modal="modal-one" class="btn__1st" >Регистрация</button>
+                                    <div class="modal" id="modal-one">
+                                        <div class="modal-bg modal-exit"></div>
+                                        <div class="modal-container">
+                                            <form class="form-registration" action="/action_page.php" method="post">
+                                                <h1>Регистрация</h1>
+                                                <label for="fname">E-Mail</label>
+                                                <input type="text" id="fname" name="name" /><br />
+                                                <label for="lname">Пароль</label>
+                                                <input type="text" id="lname" name="lastname" /><br />
                                                 <label for="rpassword">Повторите Пароль</label>
-                                            <input type="text" id="lname1" name="lastname" /><br />
-                                            <div class="enter-with">
-                                                <p>Войти с помощью</p>
-                                                <a href="#"><img src="./img/VK.svg" alt="" /></a>
-                                            </div>
-                                            <input class="submit-btn" type="submit" value="Вход" />
-                                        </form>
-                                        <button class="modal-close modal-exit">X</button>
+                                                <input type="text" id="lname" name="lastname" /><br />
+                                                <div class="enter-with">
+                                                    <p>Войти с помощью</p>
+                                                    <a href="#"><img src="./img/VK.svg" alt="" /></a>
+                                                </div>
+                                                <input class="submit-btn" type="submit" value="Регистрация" />
+                                            </form>
+                                            <button class="modal-close modal-exit">X</button>
+                                        </div>
                                     </div>
-                                </div>
-                            </li>
-                            <li class="header__btns">
-                                <button data-modal="modal-one" class="btn__1st" >Регистрация</button>
-                                <div class="modal" id="modal-one">
-                                    <div class="modal-bg modal-exit"></div>
-                                    <div class="modal-container">
-                                        <form class="form-registration" action="/action_page.php" method="post">
-                                            <h1>Регистрация</h1>
-                                            <label for="fname">E-Mail</label>
-                                            <input type="text" id="fname" name="name" /><br />
-                                            <label for="lname">Пароль</label>
-                                            <input type="text" id="lname" name="lastname" /><br />
-                                            <label for="rpassword">Повторите Пароль</label>
-                                            <input type="text" id="lname" name="lastname" /><br />
-                                            <div class="enter-with">
-                                                <p>Войти с помощью</p>
-                                                <a href="#"><img src="./img/VK.svg" alt="" /></a>
-                                            </div>
-                                            <input class="submit-btn" type="submit" value="Регистрация" />
-                                        </form>
-                                        <button class="modal-close modal-exit">X</button>
-                                    </div>
-                                </div>
+                                </li>
                             </li>
                         </ul>
                     </ul>
