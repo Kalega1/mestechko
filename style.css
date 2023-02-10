@@ -58,8 +58,9 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   outline : 0;
   }
   img {
-  border : 0;
-  }
+    margin: 15px;
+    vertical-align: middle;
+}
   figure {
   margin : 0;
   }
@@ -196,13 +197,14 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   margin : 0 auto;
   }
   .header {
+    display: flex;
     background-color: #FFFEFE;
     position: fixed;
     top: 0;
-    width: 90%;
+    width: 100%;
     background: rgb(255, 255, 255, 0.9);
     border-radius: 40px;
-  }
+}
   .header__wrapper {
   display : flex;
   flex-wrap : wrap;
@@ -233,6 +235,16 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   margin-left : 30px;
   vertical-align : middle;
   }
+
+  .header__item1 {
+    margin-left : 30px;
+    vertical-align : middle;
+    }
+
+    .lol{
+      background-image: url(./img/logo.png);
+    }
+
   .header__item:first-child {
   margin-left : 0;
   }
@@ -543,15 +555,101 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   }
 
 
-  @media only screen and (max-width: 600px) {
-    .header__list__l {
+  
+
+
+  @media only screen and (max-width: 1245px) {
+    .header__item {
+        display: none;
+    }
+  }
+
+  
+
+
+  @media only screen and (max-width: 1245px) {
+    .header__btns {
         display: none;
     }
   }
 
 
-  @media screen and (max-width: 600px) {
+  @media only screen and (max-width: 1245px) {
+    .header__list__b {
+        display: none;
+    }
+  }
+
+
+  @media only screen and (max-width: 1245px) {
+    .header {
+        background: none;
+    }
+  }
+
+
+
+  @media screen and (max-width: 1245px) {
     h1 {
-        font-size: 1.2em;
+        font-size: 70px;
     }
 }
+
+
+@media screen and (max-width: 1245px) {
+  .dropbtn {
+      display: flex;
+  }
+}
+
+@media screen and (min-width: 1245px) {
+  .dropbtn {
+      display: none;
+  }
+}
+
+
+
+
+
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
