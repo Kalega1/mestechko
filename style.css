@@ -193,8 +193,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     font-weight: normal;
     color: #222;
 }
-  .wrapper {
-  margin : 0 auto;
+.wrapper {
+  margin-left: auto;
   }
   .header {
     display: flex;
@@ -220,12 +220,13 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   justify-content : space-between;
   }
   .header__list__l {
-  display : flex;
-  flex-wrap : wrap;
-  list-style-type : none;
-  justify-content : space-between;
-  align-items : center;
-  }
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+}
   .header__list__b {
   display : flex;
   flex-wrap : wrap;
@@ -319,22 +320,24 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   font-size : 24px;
   line-height : 34px;
   color : #FFFFFF;
+  border: aliceblue;
   }
   .btn__2nd {
-  width : 140px;
-  height : 56px;
-  left : 0;
-  top : 0;
-  background : #EAECE7;
-  border-radius : 40px;
-  font-family : 'Piazzolla';
-  font-style : normal;
-  font-weight : 400;
-  font-size : 24px;
-  line-height : 34px;
-  text-align : center;
-  color : #1D4E31;
-  }
+    width: 140px;
+    height: 56px;
+    left: 0;
+    top: 0;
+    background: #EAECE7;
+    border-radius: 40px;
+    font-family: 'Piazzolla';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+    text-align: center;
+    color: #1D4E31;
+    border: aliceblue;
+}
   .place__img {
   width : 262px;
   height : 262px;
@@ -558,7 +561,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   
 
 
-  @media only screen and (max-width: 1245px) {
+  @media only screen and (max-width: 1314px) {
     .header__item {
         display: none;
     }
@@ -567,21 +570,21 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   
 
 
-  @media only screen and (max-width: 1245px) {
+  @media only screen and (max-width: 1314px) {
     .header__btns {
         display: none;
     }
   }
 
 
-  @media only screen and (max-width: 1245px) {
+  @media only screen and (max-width: 1314px) {
     .header__list__b {
         display: none;
     }
   }
 
 
-  @media only screen and (max-width: 1245px) {
+  @media only screen and (max-width: 1314px) {
     .header {
         background: none;
     }
@@ -589,20 +592,20 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 
 
-  @media screen and (max-width: 1245px) {
+  @media screen and (max-width: 681px) {
     h1 {
         font-size: 70px;
     }
 }
 
 
-@media screen and (max-width: 1245px) {
+@media screen and (max-width: 1315px) {
   .dropbtn {
       display: flex;
   }
 }
 
-@media screen and (min-width: 1245px) {
+@media screen and (min-width: 1315px) {
   .dropbtn {
       display: none;
   }
