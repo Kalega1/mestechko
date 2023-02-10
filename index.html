@@ -17,11 +17,21 @@
             <img src="./img/logo.png" alt="Местечко" style="width: 78px;">
         </a>
         <div class="wrapper">
+                <div class="dropdown">
+                    <button class = "dropbtn" id="btn"></button>
+                    <ul id="list" class="dropdown-content">
+                        <li><a href="#place" class="header__link">Любимое место</a></li>
+                        <li><a href="#about" class="header__link">Об игре</a></li>
+                        <li><a href="#news" class="header__link">Новости и обновления</a></li>
+                        <li><a href="#contacts" class="header__link">Контакты</a></li>
+                    </ul>
+                </div>
             <div class="header__wrapper">
                 <nav class="header__nav">
                     <ul class="header__list">
                         <ul class="header__list__l">
                             <li class="header__item1">
+
                             </li>
                             <li class="header__item">
                                 <a href="#place" class="header__link">Любимое место</a>
@@ -32,15 +42,6 @@
                             <li class="header__item">
                                 <a href="#news" class="header__link">Новости и обновления</a>
                             </li>
-                            <div class="dropdown">
-                                <button class="dropbtn">Dropdown</button>
-                                <div class="dropdown-content">
-                                    <a href="#place" class="header__link">Любимое место</a>
-                                    <a href="#about" class="header__link">Об игре</a>
-                                    <a href="#news" class="header__link">Новости и обновления</a>
-                                    <a href="#contacts" class="header__link">Контакты</a>
-                                </div>
-                              </div>
                             <li class="header__item">
                                 <li class="header__btns">
                                     <button class="btn__2nd" data-modal="modal-two">Вход</button>
@@ -306,6 +307,8 @@
         </div>
 
     </footer>
+    
+    <script src="dropdown.js"></script>
     <script src="script.js"></script>
 </body>
 
