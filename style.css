@@ -270,13 +270,13 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   opacity : 0.80;
   }
   h1 {
-  font-family : 'Piazzolla';
-  font-weight : 500;
-  font-size : 112px;
-  line-height : 159px;
-  text-align : center;
-  color : #1E2D37;
-  }
+    font-family: 'Piazzolla';
+    font-weight: 500;
+    font-size: 112px;
+    line-height: 123px;
+    text-align: center;
+    color: #1E2D37;
+    }
   h2 {
   font-family : 'Piazzolla';
   font-style : normal;
@@ -299,11 +299,11 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 29px;
     text-align: center;
     color: #1E2D37;
-}
+    }
     
 .top {
   width: 103%;
@@ -380,10 +380,10 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   height : 100%;
   }
   .modal-container {
-  background : #fff;
-  position : relative;
-  padding : 60px;
-  width : 400px;
+    background: #fff;
+    position: relative;
+    padding: 22px;
+    width: 400px;
   }
   .modal-close {
   position : absolute;
@@ -398,19 +398,19 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   cursor : pointer;
   }
   .form-registration {
-  width : 100%;
-  display : flex;
-  flex-direction : column;
-  align-items : center;
-  justify-content : center;
-  }
-  .form-registration input {
-  width : 100%;
-  height : 50px;
-  }
+    width: 102%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+    .form-registration input {
+      width: 71%;
+      height: 35px;
+      }
   .form-registration label {
-  font-size : 24px;
-  }
+    font-size: 14px;
+    }
   .enter-with {
   font-size : 24px;
   display : flex;
@@ -419,12 +419,12 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   gap : 40px;
   }
   .submit-btn {
-  border-radius : 40px;
-  background : #1D4E31;
-  color : #ffffff;
-  border : none;
-  font-size : 24px;
-  }
+    border-radius: 40px;
+    background: #1D4E31;
+    color: #ffffff;
+    border: none;
+    font-size: 20px;
+    }
   .news__img {
   width : 339px;
   height : 285px;
@@ -634,6 +634,9 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   }
 }
 
+.reg1 {
+  font-size: 44px;
+  }
 
 
 
