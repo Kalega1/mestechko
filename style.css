@@ -217,10 +217,11 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     border-radius: 40px;
 }
   .header__wrapper {
-  display : flex;
-  flex-wrap : wrap;
-  margin-left : 90px;
+    display: inline-block;
+  flex-wrap: wrap;
+  margin-left: 90px;
   }
+
   .header__nav {
   margin : 12px;
   }
