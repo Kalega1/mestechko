@@ -1,3 +1,5 @@
+
+
 const modals = document.querySelectorAll('[data-modal]');
 
 modals.forEach(function (trigger) {
@@ -10,7 +12,10 @@ modals.forEach(function (trigger) {
       exit.addEventListener("click", function (event) {
         event.preventDefault();
         modal.classList.remove("open");
+        
       });
     });
   });
 });
+
+

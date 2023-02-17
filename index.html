@@ -20,7 +20,7 @@
                 
             
         </div>
-        <div class="wrapper">
+        <div  class="wrapper">
                 <div class="dropdown">
                     <button class = "dropbtn" id="btn"></button>
                     <ul id="list" class="dropdown-content" style="display: none;">
@@ -48,48 +48,33 @@
                             </li>
                             <li class="header__item">
                                 <li class="header__btns">
-                                    <button class="btn__2nd" data-modal="modal-two">Вход</button>
+                                    <button id="login2" class="btn__2nd" data-modal="modal-two">Вход</button>
                                     <div class="modal" id="modal-two">
                                         <div class="modal-bg modal-exit"></div>
                                         <div class="modal-container">
-                                            <form class="form-registration" action="/action_page.php" method="post">
-                                                <h1 class="reg1">Вход</h1>
-                                                <label for="fname">E-Mail</label>
-                                                <input type="text" id="fname1" name="name" /><br />
-                                                <label for="lname">Пароль</label>
-                                                <input type="text" id="lname" name="lastname" /><br />
-                                                    <label for="rpassword">Повторите Пароль</label>
-                                                <input type="text" id="lname1" name="lastname" /><br />
-                                                <div class="enter-with">
-                                                    <p>Войти с помощью</p>
-                                                    <a href="#"><img src="./img/VK.svg" alt="" /></a>
-                                                </div>
-                                                <input class="submit-btn" type="submit" value="Вход" />
+                                            <form id="login-form" class="form center">
+                                                <h2>Вход</h2>
+                                                <p>
+                                                    <label for="email">Почта</label>
+                                                    <input type="email" id="email">
+                                                </p>
+                                                <p>
+                                                    <label for="password">Пароль</label>
+                                                    <input type="password" id="password">
+                                                </p>
+                                                <p style="text-align: center">
+                                                    Еще не зарегистрировались?
+                                                    <br>
+                                                    Зарегистрируйтесь!</a>
+                                                </p>
+                                                <button type="submit" id="login1">Войти</button>
                                             </form>
-                                            <button class="modal-close modal-exit">X</button>
                                         </div>
                                     </div>
                                 </li>
                                 <li class="header__btns">
-                                    <button data-modal="modal-one" class="btn__1st" >Регистрация</button>
-                                    <div class="modal" id="modal-one">
-                                        <div class="modal-bg modal-exit"></div>
-                                        <div class="modal-container">
-                                            <form class="form-registration" action="/action_page.php" method="post">
-                                                <h1 class="reg1">Регистрация</h1>
-                                                <label for="fname">E-Mail</label>
-                                                <input type="text" id="fname" name="name" /><br />
-                                                <label for="lname">Пароль</label>
-                                                <input type="text" id="lname" name="lastname" /><br />
-                                                <label for="rpassword">Повторите Пароль</label>
-                                                <input type="text" id="lname" name="lastname" /><br />
-                                                <div class="enter-with">
-                                                    <p>Войти с помощью</p>
-                                                    <a href="#"><img src="./img/VK.svg" alt="" /></a>
-                                                </div>
-                                                <input class="submit-btn" type="submit" value="Регистрация" />
+                                    
                                             </form>
-                                            <button class="modal-close modal-exit">X</button>
                                         </div>
                                     </div>
                                 </li>
@@ -99,6 +84,7 @@
                 </nav>
             </div>
         </div>
+        
     </header>
 
 
@@ -112,22 +98,28 @@
                                 <div class="modal" id="modal-one2">
                                     <div class="modal-bg modal-exit"></div>
                                     <div class="modal-container">
-                                        <form class="form-registration" action="/action_page.php" method="post">
-                                            <h1 class="reg1">Регистрация</h1>
-                                            <label for="fname">E-Mail</label>
-                                            <input type="text" id="fname" name="name" /><br />
-                                            <label for="lname">Пароль</label>
-                                            <input type="text" id="lname" name="lastname" /><br />
-                                            <label for="rpassword">Повторите Пароль</label>
-                                            <input type="text" id="lname" name="lastname" /><br />
-                                            <div class="enter-with">
-                                                <p>Войти с помощью</p>
-                                                <a href="#"><img src="./img/VK.svg" alt="" /></a>
-                                            </div>
-                                            <input class="submit-btn" type="submit" value="Регистрация" />
+                                        <form id="signup-form" class="form center">
+                                            <h2>Регистрация</h2>
+                                            <p>
+                                                <label for="email">Почта</label>
+                                                <input type="email" id="email">
+                                            </p>
+                                            <p>
+                                                <label for="password">Пароль</label>
+                                                <input type="password" id="password">
+                                            </p>
+                                            <p style="text-align: center">
+                                                Уже есть аккаунт?
+                                                <br>
+                                                Перейти на страницу <a href="./login.html">входа</a>
+                                            </p>
+                                            <button type="submit" id="login">Зарегистрироваться</button>
                                         </form>
-                                        <button class="modal-close modal-exit">X</button>
+                                        
+
         </section>
+
+        
 
         <section class="place" id="place">
             <h2 class="place__h2">Любимое место</h2>
@@ -311,9 +303,32 @@
         </div>
 
     </footer>
-    
-    <script src="dropdown.js"></script>
-    <script src="script.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/dropdown.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-auth-compat.js"></script>
+
+<script>
+    const firebaseConfig = {
+        apiKey: "AIzaSyDpv2TBQN3Pz-10YRlMGUeh-YPG_D41L_8",
+        authDomain: "mestechko-adfdd.firebaseapp.com",
+        databaseURL: "https://mestechko-adfdd-default-rtdb.firebaseio.com",
+        projectId: "mestechko-adfdd",
+        storageBucket: "mestechko-adfdd.appspot.com",
+        messagingSenderId: "527852561179",
+        appId: "1:527852561179:web:95e07039fe04199807e9be",
+        measurementId: "G-KLCGM8DXYY"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+
+    const auth = firebase.auth();
+    const db = firebase.firestore();
+</script>
 </body>
 
 </html>
