@@ -92,7 +92,13 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   text-transform : none;
   }
   button, html input[type="button"], input[type="reset"], input[type="submit"] {
-  cursor : pointer;
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background: lightgrey;
+    font-size: 15px;
+    cursor: pointer;
   }
   button[disabled], html input[disabled] {
   cursor : default;
@@ -117,7 +123,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   border-spacing : 0;
   }
   html, button, input, select, textarea {
-  color : #222;
+  color : black;
   }
   ::-moz-selection {
   background : #b3d4fc;
