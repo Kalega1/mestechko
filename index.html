@@ -48,34 +48,6 @@
                             </li>
                             <li class="header__item">
                                 <li class="header__btns">
-                                    <button id="login2" class="btn__2nd" data-modal="modal-two">Вход</button>
-                                    <div class="modal" id="modal-two">
-                                        <div class="modal-bg modal-exit"></div>
-                                        <div class="modal-container">
-                                            <form id="login-form" class="form center">
-                                                <h2>Вход</h2>
-                                                <p>
-                                                    <label for="email">Почта</label>
-                                                    <input type="email" id="email">
-                                                </p>
-                                                <p>
-                                                    <label for="password">Пароль</label>
-                                                    <input type="password" id="password">
-                                                </p>
-                                                <p style="text-align: center">
-                                                    Еще не зарегистрировались?
-                                                    <br>
-                                                    
-                                                    Перейти на страницу <a href="./login.html">входа</a>
-                                            
-                                                </p>
-                                                <br>
-                                                <button type="submit" id="login1">Войти</button>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="header__btns">
                                     
                                             </form>
                                         </div>
@@ -97,29 +69,7 @@
             <p class="top__p1">Браузерная текстовая ММО-игра</p>
             <p class="top__p2">текст (содержание будет оформлено позднее) кратко указывающий на наши преимущества
             </p>
-            <button data-modal="modal-one2" class="btn__1st" >Регистрация</button>
-                                <div class="modal" id="modal-one2">
-                                    <div class="modal-bg modal-exit"></div>
-                                    <div class="modal-container">
-                                        <form id="signup-form" class="form center">
-                                            <h2>Регистрация</h2>
-                                            <p>
-                                                <label for="email">Почта</label>
-                                                <input type="email" id="email">
-                                            </p>
-                                            <p>
-                                                <label for="password">Пароль</label>
-                                                <input type="password" id="password">
-                                            </p>
-                                            <p style="text-align: center">
-                                                Уже есть аккаунт?
-                                                <br>
-                                                Перейти на страницу <a href="./login.html">входа</a>
-                                            </p>
-                                            <button type="submit" id="login" >Зарегистрироваться</button>
-                                        </form>
-                                        
-
+            <button  onclick="location.href='reg.html'"class="btn__1st"  >Регистрация</button>                        
         </section>
 
         
@@ -306,32 +256,10 @@
         </div>
 
     </footer>
-    <script src="js/app.js"></script>
-    <script src="js/login.js"></script>
-    <script src="js/app.js"></script>
+    
+    
+   
     <script src="js/dropdown.js"></script>
-    <script src="js/script.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-app-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-firestore-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-auth-compat.js"></script>
-
-<script>
-    const firebaseConfig = {
-        apiKey: "AIzaSyDpv2TBQN3Pz-10YRlMGUeh-YPG_D41L_8",
-        authDomain: "mestechko-adfdd.firebaseapp.com",
-        databaseURL: "https://mestechko-adfdd-default-rtdb.firebaseio.com",
-        projectId: "mestechko-adfdd",
-        storageBucket: "mestechko-adfdd.appspot.com",
-        messagingSenderId: "527852561179",
-        appId: "1:527852561179:web:95e07039fe04199807e9be",
-        measurementId: "G-KLCGM8DXYY"
-    };
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
-
-    const auth = firebase.auth();
-    const db = firebase.firestore();
-</script>
 </body>
 
 </html>

@@ -1,0 +1,152 @@
+* {
+    font-family: Montserrat, sans-serif;
+    color: dimgrey;
+    box-sizing: border-box;
+
+}
+
+.form {
+    width: 30%;
+    height: 30%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px #C2C2C2;
+}
+
+.center {
+    margin: 250px auto auto;
+    display: block;
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+input, #type {
+    width: 100%;
+    height: 30px;
+}
+
+
+form button {
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background: lightgrey;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.container {
+    display: block;
+    margin: 100px auto;
+    width: 30%;
+    height: 620px;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 0 0 30px #C2C2C2;
+    padding: 18px;
+    position: relative;
+}
+
+#todo-container {
+    height: 510px;
+    overflow: scroll;
+    padding: 10px;
+}
+
+
+.buttons {
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+
+}
+
+.buttons button {
+    width: 115px;
+}
+
+.button1 {
+    background-color: #c1bdbd; /* Green */
+}
+
+.button2 {
+    background-color: coral; /* Green */
+}
+
+.button3 {
+    background-color: green;
+}
+
+.hover_button {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.hover_button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+li {
+    list-style: none;
+    display: flex;
+    position: relative;
+}
+
+
+.button_div {
+    position: absolute;
+    right: 0;
+}
+
+.delete {
+    background-color: #f8ac8b;
+}
+
+.finish {
+    background-color: #7bc97b;
+}
+
+.todo-form input {
+    outline: none;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: blue;
+}
+
+.sign-out {
+    text-align: right;
+}
+
+.sign-out-button {
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 15px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: indianred;
+    color: white;
+}
+
+.button {
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
