@@ -26,6 +26,27 @@
     </p>
     <button type="submit" id="login">Зарегистрироваться</button>
 </form>
+<script>
+  const signupForm = document.querySelector('#signup-form');
+  const email = document.querySelector('#email');
+  const password = document.querySelector('#password');
+
+  signupForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      // get user info
+      const emailVal = email.value;
+      const passwordVal = password.value;
+
+      // sign up the user
+      firebase.auth().createUserWithEmailAndPassword(emailVal, passwordVal).then(() => {
+          window.location = './login.html';
+      }).catch((err) => {
+          console.log(err);
+      });
+
+  }); 
+</script>
 
 
 <script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-app-compat.js"></script>
