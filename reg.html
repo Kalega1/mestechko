@@ -22,7 +22,7 @@
     <p style="text-align: center">
         Уже есть аккаунт?
         <br>
-        Перейти на страницу <a href="./login.html">входа</a>
+        Перейти на страницу <a href="login.html">входа</a>
     </p>
     <button type="submit" id="login">Зарегистрироваться</button>
 </form>
@@ -40,15 +40,11 @@
 
       // sign up the user
       firebase.auth().createUserWithEmailAndPassword(emailVal, passwordVal).then(() => {
-          window.location = './login.html';
-      }).catch((err) => {
-          console.log(err);
-      });
+          location = 'login.html';
+      })
 
   }); 
 </script>
-
-
 <script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-firestore-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-auth-compat.js"></script>
@@ -68,7 +64,5 @@
     const auth = firebase.auth();
     const db = firebase.firestore();
 </script>
-
-<script src="js/app.js"></script>
 </body>
 </html>

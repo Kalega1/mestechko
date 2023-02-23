@@ -7,9 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="sign-out">
-        <button class="sign-out-button hover_button" onclick="logout()">Sign-out</button>
-    </div>
+  <div class="sign-out">
+    <button onclick="firebase.auth().signOut()">Sign Out</button>
+      Sign-out
+    </button>
+  </div>
     <br><br>
     <div id="sidebar" style="float: left;">
         <ul>
@@ -49,6 +51,10 @@
     
         const auth = firebase.auth();
         const db = firebase.firestore();
+        
+
+
     </script>
+    <script src="js/users.js"></script>
 </body>
 </html>

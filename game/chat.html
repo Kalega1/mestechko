@@ -5,21 +5,95 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <title>Chat Room</title>
+    <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="chatroom.js"></script>
+
+    <style type="text/css">
+
+        #messageArea {
+            width: 500px;
+            height: 300px;
+            border: 1px solid #cccccc;
+            margin-top: 10px;
+            padding: 10px;
+        }
+
+        #nameInput, #messageInput { 
+            width: 400px; 
+            padding: 5px; 
+        }
+
+        #sendButton { 
+            width: 100px; 
+            padding: 5px; 
+        }
+
+    </style>  
 </head>
 <body>
-    <h1>Chat</h1>
+  <div id="messageArea"></div><br/>  
 
-    <div id="chat-container">
+         Name : <input type="text" id="nameInput" /><br/>  
 
-      <!-- Messages will be displayed here -->
+         Message : <input type="text" id="messageInput" /><br/>  
 
-    </div>
+         <button id="sendButton">Send</button><br/>  
 
-    <!-- Form to send messages -->
-    <form id="chat-form">
-      <input type="text" name="message" placeholder="Type your message here..." />
-      <input type="submit" value="Send" />
-    </form>
 
+
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-database.js"></script>
+
+    <script type="text/javascript">
+
+       // Подключаем Firebase
+var firebase = require("firebase");
+
+// Инициализируем Firebase
+var config = {
+  apiKey: "AIzaSyDpv2TBQN3Pz-10YRlMGUeh-YPG_D41L_8",
+        authDomain: "mestechko-adfdd.firebaseapp.com",
+        databaseURL: "https://mestechko-adfdd-default-rtdb.firebaseio.com",
+        projectId: "mestechko-adfdd",
+        storageBucket: "mestechko-adfdd.appspot.com",
+        messagingSenderId: "527852561179",
+        appId: "1:527852561179:web:95e07039fe04199807e9be",
+        measurementId: "G-KLCGM8DXYY"
+};
+firebase.initializeApp(config);
+
+ // Получаем ссылку на базу данных Firebase 
+var database = firebase.database();
+
+ // Создаем пространство имен, чтобы избежать конфликтов с другими проектами Firebase  
+var chatroomRef = database.ref('chatroom');
+
+ // Слушаем, чтобы получить сообщения, которые отправляются  
+chatroomRef.on('child_added', function(snapshot) {  
+
+    // snapshot - снимок, сделанный Firebase,  
+
+    // snapshot.val() - JSON - data  
+
+    console.log(snapshot.val());  
+
+    var message = snapshot.val();  
+
+    displayChatMessage(message);  
+});  
+
+ // Sends a chat message to the Firebase database  
+function sendMessage() {  
+
+    var name = $('#nameInput').val();  
+
+    var text = $('#messageInput').val();  
+
+    chatroomRef.push({name:name, text:text});  
+
+    $('#messageInput').val('');  
+}</script> 
 </body>
 </html>
