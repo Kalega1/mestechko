@@ -6,7 +6,7 @@ loginForm.addEventListener('submit', e => {
     const loginPassword = loginForm['password'].value
 
     auth.signInWithEmailAndPassword(loginEmail, loginPassword).then(() =>
-        location = "user.html"
+        location = "users.html"
         ).catch(err => console.log(err))
     
 })
