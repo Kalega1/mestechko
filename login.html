@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,9 @@
     <link rel="stylesheet" href="auth.css">
     <title>Document</title>
 </head>
-<body>
+
+<body style="overflow: hidden;">
+    <div class="background"><img src="img/background.svg" alt="image"></div>
     <form id="login-form" class="form center">
         <h2>Вход</h2>
         <p>
@@ -27,30 +30,31 @@
         </p>
         <button type="submit" id="login">Войти</button>
     </form>
-    
-    
+
+
     <script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-firestore-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-auth-compat.js"></script>
-    
+
     <script>
         const firebaseConfig = {
-        apiKey: "AIzaSyDpv2TBQN3Pz-10YRlMGUeh-YPG_D41L_8",
-        authDomain: "mestechko-adfdd.firebaseapp.com",
-        databaseURL: "https://mestechko-adfdd-default-rtdb.firebaseio.com",
-        projectId: "mestechko-adfdd",
-        storageBucket: "mestechko-adfdd.appspot.com",
-        messagingSenderId: "527852561179",
-        appId: "1:527852561179:web:95e07039fe04199807e9be",
-        measurementId: "G-KLCGM8DXYY"
+            apiKey: "AIzaSyDpv2TBQN3Pz-10YRlMGUeh-YPG_D41L_8",
+            authDomain: "mestechko-adfdd.firebaseapp.com",
+            databaseURL: "https://mestechko-adfdd-default-rtdb.firebaseio.com",
+            projectId: "mestechko-adfdd",
+            storageBucket: "mestechko-adfdd.appspot.com",
+            messagingSenderId: "527852561179",
+            appId: "1:527852561179:web:95e07039fe04199807e9be",
+            measurementId: "G-KLCGM8DXYY"
         };
         // Initialize Firebase
         firebase.initializeApp(firebaseConfig);
-    
+
         const auth = firebase.auth();
         const db = firebase.firestore();
     </script>
-    
+
     <script src="js/login.js"></script>
 </body>
+
 </html>
