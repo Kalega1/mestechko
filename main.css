@@ -1,0 +1,138 @@
+p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 100px;
+}
+.header-list {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  list-style-type: none;
+  font-size: 24px;
+}
+.profile {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+.profile-img {
+  border-radius: 50%;
+  background-color: #e4faee;
+  width: 75px;
+  height: 75px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  overflow: hidden;
+}
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.name {
+  font-size: 16px;
+}
+.lvl {
+  font-size: 14px;
+}
+.search {
+  padding: 5px;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+  width: 250px;
+}
+.search input {
+  border: none;
+  background-color: #f4f4f4;
+}
+.search input:focus {
+  border: none;
+}
+.main {
+  background-color: #e4faee;
+}
+nav {
+  min-width: 270px;
+}
+.content {
+  width: calc(100% - 270px);
+  height: 800px;
+}
+main {
+  width: 100%;
+  flex-direction: row;
+  display: flex;
+  flex-wrap: nowrap;
+  min-height: calc(100% - 100px);
+}
+.nav-list {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.nav-list li {
+  padding: 5px;
+  gap: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.content-area {
+  min-height: calc(100% - 220px);
+  width: 100%;
+  background-color: #e4faee;
+}
+.nav-list li img {
+  max-height: 50px;
+}
+.nav-list li a {
+  background-color: #e4faee;
+  padding: 5px;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.footer-sec {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+}
+.footer-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.footer-link a {
+  color: #979797;
+}

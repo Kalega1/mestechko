@@ -11,6 +11,8 @@
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 30px #C2C2C2;
+    background-color: #ffffff;
+
 }
 
 .center {
@@ -24,7 +26,8 @@ h2 {
     font-weight: 800;
 }
 
-input, #type {
+input,
+#type {
     width: 100%;
     height: 30px;
 }
@@ -50,6 +53,8 @@ form button {
     box-shadow: 0 0 30px #C2C2C2;
     padding: 18px;
     position: relative;
+    background-image: url(img/background.svg);
+    background-size: cover;
 }
 
 #todo-container {
@@ -71,11 +76,13 @@ form button {
 }
 
 .button1 {
-    background-color: #c1bdbd; /* Green */
+    background-color: #c1bdbd;
+    /* Green */
 }
 
 .button2 {
-    background-color: coral; /* Green */
+    background-color: coral;
+    /* Green */
 }
 
 .button3 {
@@ -149,4 +156,26 @@ li {
     margin: 4px 2px;
     transition-duration: 0.4s;
     cursor: pointer;
+}
+
+.background {
+    background-image: url(img/background.svg);
+    z-index: -1;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media (max-width:800px) {
+    .form {
+        width: 320px;
+        height: 30%;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 30px #C2C2C2;
+        background-color: #ffffff;
+        position: relative;
+    }
 }
