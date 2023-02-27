@@ -18,12 +18,51 @@
   <body>
  
       <div class="content">
-        <div class="content-area">
-          <button class="button-traveling">персонаж</button>
-          <!-- НАДО КНОПКУ ДОДЕЛАТЬ -->
+        <div class="content-area"> Выбери своего героя
+          <form  class="character">
+            <div>
+              <img src="../img/character-logo.svg" alt="qqq">
+            <input type="radio" name="avatar" value="1" checked>
+          </div>
+          <div>
+            <img src="../img/character-logo.svg" alt="qqq">
+            <input type="radio" name="avatar" value="2">
+          </div>
+          <div>
+            <img src="../img/character-logo.svg" alt="qqq">
+            <input type="radio" name="avatar" value="3">
+          </div>
+          </form> 
+      
+          <button type="submit">Сохранить героя</button>     <!-- save button-->
           <img src="фон-персонажа" alt="">
         </div>
 
+        <table>
+          
+          <tr>
+            <th>Количество</th>
+            <th>Название</th>
+            <th>Тип</th>
+            <th>Стоимость</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>окунь</td>
+            <td>рыба</td>
+            <td>1</td>
+            <td><select>
+              <option value="sell">Продать</option>
+              <option value="use">Использовать</option>
+            </select>
+          </td>
+          <td>
+            <button>подтвердить</button>
+          </td>
+
+          </tr>  
+        </table>
+        
 
     <script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-firestore-compat.js"></script>
