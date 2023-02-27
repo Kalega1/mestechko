@@ -54,24 +54,21 @@
       <nav>
         <ul class="nav-list">
           <li>
-            <img src="img/character-logo.svg" alt="" />
-            <a href="">Персонаж</a>
+            <img src="img/character-logo.svg" alt="" /><a href="#" onclick="openPage('pages/character.html')">Персонаж</a>
           </li>
           <li>
-            <img src="img/travel-logo.svg" alt="" />
-            <a href="">Путешествие</a>
+            <img src="img/travel-logo.svg" alt="" /><a href="#" onclick="openPage('pages/travel.html')">Путешествие</a>
           </li>
           <li>
-            <img src="img/fishing-logo.svg" alt="" /> <a href="">Рыбалка</a>
+            <img src="img/fishing-logo.svg" alt="" /> <a href="#" onclick="openPage('pages/fishing.html')">Рыбалка</a>
           </li>
-          <li><img src="img/chat-logo.svg" alt="" /> <a href="">Чат</a></li>
-          <li><img src="img/shop-logo.svg" alt="" /> <a href="">Магазин</a></li>
+          <li><img src="img/chat-logo.svg" alt="" /> <a href="#" onclick="openPage('pages/chat.html')">Чат</a></li>
+          <li><img src="img/shop-logo.svg" alt="" /> <a href="#" onclick="openPage('pages/market.html')">Магазин</a></li>
         </ul>
       </nav>
-      <div class="content">
+      <div class="content" id="content">
         <div class="content-area">
-          <button class="button-traveling">Путешествовать</button>
-          <!-- НАДО КНОПКУ ДОДЕЛАТЬ -->
+          <iframe class="iframe" src="" width="1000%" height="1000%"></iframe>  
           <img src="фон-путешествия" alt="">
         </div>
         <footer class="footer">
@@ -97,11 +94,11 @@
       </div>
     </main>
     
-        <script type="text/javascript"> 
-          function openPage(url) { 
-            document.querySelector('#content iframe').src = url; 
-          } 
-        </script>
+    <script type="text/javascript"> 
+      function openPage(url) { 
+        document.querySelector('#content iframe').src = url; 
+      } 
+    </script>
 
     <script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-firestore-compat.js"></script>

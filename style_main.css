@@ -1063,3 +1063,8 @@ main {
 .footer-link a {
   color: #979797;
 }
+
+.iframe{
+width: calc(100% - 270px);
+height: 800px;
+}
