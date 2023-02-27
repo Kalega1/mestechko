@@ -9,7 +9,8 @@
     />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>Местечко</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="main.css" />
+    l
     <script
       src="https://kit.fontawesome.com/08958affb8.js"
       crossorigin="anonymous"
@@ -22,20 +23,80 @@
       </button>
     </div>
    
-    <br><br>
-    <div id="sidebar" style="float: left;">
-        <ul>
-            <li><a href="#" onclick="openPage('game/pers.html')">Персонаж</a></li>
-            <li><a href="#" onclick="openPage('game/putesh.html')">Путешествие</a></li>
-            <li><a href="#" onclick="openPage('game/ribalka.html')">Рыбалка</a></li>
-            <li><a href="#" onclick="openPage('game/chat.html')">Чат</a></li>
-            <li><a href="#" onclick="openPage('game/magaz.html')">Магазин</a></li>
-          </ul>
+    <header class="header">
+      <img src="img/logo.svg" alt="logo" />
+      <ul class="header-list">
+        <li><a href="">Новости и обновления</a></li>
+        <li><a href="">Купить золото</a></li>
+      </ul>
+      <div class="menu-person">
+        <p class="energy-menu">Энергия</p>
+        <img src="molnia" alt="energy" />
+        <img src="energy-scale.svg" alt="energy-scale" />
+        <p class="HP-menu">Жизни</p>
+        <img src="heart.svg" alt="heart" />
+        <img src="HP-scale.svg" alt="hp-scale" />
+      </div>
+      <div class="icon-navigation">
+        <img src="notification-icon.svg" alt="notification-icon" />
+        <img src="profile-icon.svg" alt="profile-icon" />
+      </div>
+      <div class="profile">
+        <div class="profile-img">
+          <img src="" alt="" style="width: 100%; height: 100%; z-index: -1" />
         </div>
-    
-        <div id="content">
-          <iframe src="" width="100%" height="100%"></iframe>  
+        <div class="profile-info">
+          <p class="name">Имя игрока</p>
+          <p class="lvl">1 уровень</p>
         </div>
+      </div>
+    </header>
+    <main>
+      <nav>
+        <ul class="nav-list">
+          <li>
+            <img src="img/character-logo.svg" alt="" />
+            <a href="">Персонаж</a>
+          </li>
+          <li>
+            <img src="img/travel-logo.svg" alt="" />
+            <a href="">Путешествие</a>
+          </li>
+          <li>
+            <img src="img/fishing-logo.svg" alt="" /> <a href="">Рыбалка</a>
+          </li>
+          <li><img src="img/chat-logo.svg" alt="" /> <a href="">Чат</a></li>
+          <li><img src="img/shop-logo.svg" alt="" /> <a href="">Магазин</a></li>
+        </ul>
+      </nav>
+      <div class="content">
+        <div class="content-area">
+          <button class="button-traveling">Путешествовать</button>
+          <!-- НАДО КНОПКУ ДОДЕЛАТЬ -->
+          <img src="фон-путешествия" alt="">
+        </div>
+        <footer class="footer">
+          <section class="footer-sec">
+            <a href="#" target="_blank" class="foot__link">
+              <img src="./img/vk-black.svg" alt="vk" class="footer-img"
+            /></a>
+
+            <a href="#" target="_blank" class="foot__link">
+              <img src="./img/tg-black.svg" alt="tg" class="footer-img"
+            /></a>
+
+            <a href="#" target="_blank" class="foot__link">
+              <img src="./img/ds-black.svg" alt="dc" class="footer-img"
+            /></a>
+          </section>
+          <div class="footer-link">
+            <a href="#">Обратная связь</a>
+            <a href="#">Политика конфиденциальности</a>
+            <a href="#">Условия пользования</a>
+          </div>
+        </footer>
+      </div>
+    </main>
     
         <script type="text/javascript"> 
           function openPage(url) { 
