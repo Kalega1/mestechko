@@ -16,12 +16,32 @@
     ></script>
   </head>
   <body>
-      <div class="content">
-        <div class="content-area">
-          <button class="button-traveling">чат</button>
-          <!-- НАДО КНОПКУ ДОДЕЛАТЬ -->
-          <img src="фон-чата" alt="">
-        </div>
+    <title>Chat</title>
+    <script type="text/javascript">
+      function sendMessage() {
+        var message = document.getElementById("message").value;
+
+        if (message != "") {
+          document.getElementById("chatbox").innerHTML += "<div class='message'>" + message + "</div>";
+
+          document.getElementById("message").value = "";
+        }
+      }
+
+      window.onload = function() {
+        document.getElementById("send").onclick = sendMessage;
+      }
+
+    </script>
+
+  </head>
+
+  <body>
+
+    <div id="chatbox"></div><br />
+
+    <input type="text" id="message" />&nbsp;&nbsp;<input type="button" value="Send" id="send" />
+
     <script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-firestore-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-auth-compat.js"></script>
