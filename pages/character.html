@@ -1,88 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"
-    />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title>Персонаж. Местечко</title>
-    <link rel="stylesheet" href="../style_main.css" />
-    <script
-      src="https://kit.fontawesome.com/08958affb8.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
- 
-      <div class="content">
-        <div class="content-area"> Выбери своего героя
-          <form  class="character">
-            <div>
-              <img src="../img/character-logo.svg" alt="qqq">
-            <input type="radio" name="avatar" value="1" checked>
-          </div>
-          <div>
-            <img src="../img/character-logo.svg" alt="qqq">
-            <input type="radio" name="avatar" value="2">
-          </div>
-          <div>
-            <img src="../img/character-logo.svg" alt="qqq">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+<link rel="stylesheet" href="character.css" />
+
+<body>
+  <div class="content">
+    <div class="content-area">
+      <h5 class="heading">Выбор персонажа</h5>
+      <form class="character">
+
+        <div class="character_box">
+          <div class="persona">
+            <img class="persona_img" src="../img/pers1.png" alt="maket">
+            <p class="text_persona">Ник игрока <br> 1 уровень <br> пол</p>
             <input type="radio" name="avatar" value="3">
           </div>
-          </form> 
-      
-          <button type="submit">Сохранить героя</button>     <!-- save button-->
-          <img src="фон-персонажа" alt="">
+          <div class="persona">
+            <img class="persona_img" src="../img/pers2.png" alt="maket">
+            <p class="text_persona">Ник игрока <br> 1 уровень <br> пол</p>
+            <input type="radio" name="avatar" value="3">
+          </div>
+          <div class="persona">
+            <img class="persona_img" src="../img/pers3.png" alt="maket">
+            <p class="text_persona">Добавить игрока <br> <br> </p>
+            <input type="radio" name="avatar" value="3">
+          </div>
         </div>
+      </form>
+      <div class="submit_div">
+        <button class="submitt" type="submit">Сохранить героя</button> <!-- save button-->
 
-        <table>
-          
+      </div>
+
+      <h4 class="invent_text">Инвентарь</h4>
+      <div class="invent">
+        <table class="invent_table">
+
           <tr>
-            <th>Количество</th>
+            <th>Кол-во</th>
             <th>Название</th>
+            <th>Статистика</th>
             <th>Тип</th>
             <th>Стоимость</th>
+            <td><select>
+                <option value="sell">Продать</option>
+                <option value="use">Использовать</option>
+              </select>
+            </td>
           </tr>
           <tr>
-            <td>1</td>
-            <td>окунь</td>
-            <td>рыба</td>
-            <td>1</td>
-            <td><select>
-              <option value="sell">Продать</option>
-              <option value="use">Использовать</option>
-            </select>
-          </td>
-          <td>
-            <button>подтвердить</button>
-          </td>
+            <td class="quantity">1</td>
+            <td class="namefish">карась <img class="fishpng" src="../img/karas.png" alt=""></td>
+            <td class="statistics">обитает в пресных водах</td>
+            <td class="type">рыба</td>
+            <td class="price">1</td>
+            <td>
+              <button class="invent_button">подтвердить</button>
+            </td>
 
-          </tr>  
+          </tr>
+          <tr>
+            <td class="quantity">4</td>
+            <td class="namefish">сом <img class="fishpng" src="../img/som.png" alt=""></td>
+            <td class="statistics">обитает в пресных водах</td>
+            <td class="type">рыба</td>
+            <td class="price">7</td>
+            <td>
+              <button class="invent_button">подтвердить</button>
+            </td>
+
+          </tr>
+          <tr>
+            <td class="quantity">4</td>
+            <td class="namefish">лабань<img class="fishpng" src="../img/som.png" alt=""></td>
+            <td class="statistics">обитает в прекраных морях наших окрестностей</td>
+            <td class="type">рыба</td>
+            <td class="price">7</td>
+            <td>
+              <button class="invent_button">подтвердить</button>
+            </td>
+
+          </tr>
+          <tr>
+            <td class="quantity">2</td>
+            <td class="namefish">окунь <img class="fishpng" src="../img/som.png" alt=""></td>
+            <td class="statistics">обитает в пресных водах</td>
+            <td class="type">рыба</td>
+            <td class="price">5</td>
+            <td>
+              <button class="invent_button">подтвердить</button>
+            </td>
+
+          </tr>
+          <tr>
+            <td class="quantity">2</td>
+            <td class="namefish">карп <img class="fishpng" src="../img/karp.png" alt=""></td>
+            <td class="statistics">обитает в пресных водах</td>
+            <td class="type">рыба</td>
+            <td class="price">4</td>
+            <td>
+              <button class="invent_button">подтвердить</button>
+            </td>
+
+          </tr>
         </table>
-        
+      </div>
 
-    <script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-app-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-firestore-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-auth-compat.js"></script>
-    <script>
-      const firebaseConfig = {
-        apiKey: "AIzaSyDpv2TBQN3Pz-10YRlMGUeh-YPG_D41L_8",
-        authDomain: "mestechko-adfdd.firebaseapp.com",
-        databaseURL: "https://mestechko-adfdd-default-rtdb.firebaseio.com",
-        projectId: "mestechko-adfdd",
-        storageBucket: "mestechko-adfdd.appspot.com",
-        messagingSenderId: "527852561179",
-        appId: "1:527852561179:web:95e07039fe04199807e9be",
-        measurementId: "G-KLCGM8DXYY"
-      };
-      firebase.initializeApp(firebaseConfig);
-      const auth = firebase.auth();
-      const db = firebase.firestore();
-    </script>
+      <script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-app-compat.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-firestore-compat.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-auth-compat.js"></script>
+      <script>
+        const firebaseConfig = {
+          apiKey: "AIzaSyDpv2TBQN3Pz-10YRlMGUeh-YPG_D41L_8",
+          authDomain: "mestechko-adfdd.firebaseapp.com",
+          databaseURL: "https://mestechko-adfdd-default-rtdb.firebaseio.com",
+          projectId: "mestechko-adfdd",
+          storageBucket: "mestechko-adfdd.appspot.com",
+          messagingSenderId: "527852561179",
+          appId: "1:527852561179:web:95e07039fe04199807e9be",
+          measurementId: "G-KLCGM8DXYY"
+        };
+        firebase.initializeApp(firebaseConfig);
+        const auth = firebase.auth();
+        const db = firebase.firestore();
+      </script>
 
-    <script src="js/users.js"></script>
-  </body>
+      <script src="js/users.js"></script>
+    </div>
+    <footer class="footer">
+      <section class="footer-sec">
+        <a href="#" target="_blank" class="foot__link">
+          <img src="./img/vk-black.svg" alt="vk" class="footer-img" /></a>
+
+        <a href="#" target="_blank" class="foot__link">
+          <img src="./img/tg-black.svg" alt="tg" class="footer-img" /></a>
+
+        <a href="#" target="_blank" class="foot__link">
+          <img src="./img/ds-black.svg" alt="dc" class="footer-img" /></a>
+      </section>
+      <div class="footer-link">
+        <a href="#">Обратная связь</a>
+        <a href="#">Политика конфиденциальности</a>
+        <a href="#">Условия пользования</a>
+
+    </footer>
+
+    </main>
+</body>
+
 </html>
