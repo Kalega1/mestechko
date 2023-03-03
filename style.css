@@ -368,22 +368,34 @@ body {
 
 .wrapper {
   margin-left: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
 }
 
 .header {
-  margin-top: 7px;
-  margin-left: 7px;
   display: flex;
-  background-color: #FFFEFE;
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgb(255, 255, 255, 0.9);
-  border-radius: 40px;
+  justify-content: center;
+  background: rgba(255, 255, 255, .6);
+  -webkit-backdrop-filter: blur(7px);
+  backdrop-filter: blur(7px);
+  box-shadow: 0px 1px 6px 0px rgba(90, 90, 90, 0.2);
+
+  < !--[if IE]> {
+    background: linear-gradient(rgba(255, 255, 255), rgba(255, 255, 255, .9));
+    /* Для браузера IE */
+  }
+
+  < ![endif]-->
 }
 
 .header__wrapper {
-  display: inline-block;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
   flex-wrap: wrap;
   margin-left: 90px;
 }
@@ -457,7 +469,7 @@ h1 {
   font-family: 'Piazzolla';
   font-weight: 500;
   font-size: 112px;
-  line-height: 123px;
+  line-height: 1.1;
   text-align: center;
   color: #1E2D37;
 }
@@ -467,9 +479,11 @@ h2 {
   font-style: normal;
   font-weight: 500;
   font-size: 48px;
-  line-height: 68px;
+  line-height: 1.1;
   text-align: center;
   color: #1E2D37;
+  padding-top: 10px;
+  padding-bottom: 20px;
 }
 
 h3 {
@@ -477,7 +491,7 @@ h3 {
   font-style: normal;
   font-weight: 500;
   font-size: 32px;
-  line-height: 45px;
+  line-height: 1.1;
   text-align: center;
   color: #1E2D37;
 }
@@ -487,7 +501,7 @@ p {
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
-  line-height: 29px;
+  line-height: 1.4;
   text-align: center;
   color: #1E2D37;
 }
@@ -649,6 +663,8 @@ p {
   justify-content: space-around;
   flex-wrap: wrap;
   list-style-type: none;
+  max-width: 2000px;
+  margin: auto;
 }
 
 .place__item {
@@ -674,10 +690,14 @@ p {
   padding-top: 40px;
   padding-bottom: 80px;
   margin-bottom: 40px;
-  margin: 7px;
+  width: 100%;
 }
 
-.news__wrapper {}
+/* чтобы блок новостей был по центру */
+.news__wrapper {
+  display: grid;
+  justify-content: center;
+}
 
 .about__h2 {
   margin-bottom: 40px;
@@ -685,8 +705,16 @@ p {
 
 .about__p {
   display: contents;
-  width: 1157px;
+  justify-content: center;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 1024px) {
+  .about__p {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1157px;
+  }
 }
 
 .news__h2 {
@@ -703,7 +731,8 @@ p {
 }
 
 .news__fig {
-  margin-bottom: 120px;
+  margin-bottom: 60px;
+  margin-top: 20px;
 }
 
 .news__img {
@@ -727,7 +756,7 @@ p {
 }
 
 .news__link {
-  margin: 82px;
+  margin: 0 auto;
   width: 179px;
   height: 36px;
   background-color: #E4FAEE;
@@ -749,9 +778,12 @@ p {
 }
 
 .up {
+  /* для плавающей кнопки (пока не разобралась):
+  position: fixed;
+  z-index: 999; */
   margin-bottom: 80px;
   text-align: right;
-  margin-right: 60px;
+  margin-right: 40px;
 }
 
 .up__link {
@@ -766,7 +798,6 @@ p {
 }
 
 .foot__h2 {
-  margin-top: 6px;
   margin-bottom: 40px;
   background-color: #E4FAEE;
 }
@@ -807,10 +838,12 @@ p {
 .top__p1 {
   margin-bottom: 16px;
   font-size: 40px;
+  line-height: 42px;
 }
 
 .top__p2 {
   margin-bottom: 24px;
+  line-height: 24px;
 }
 
 
@@ -842,7 +875,7 @@ p {
 
 @media only screen and (max-width: 1314px) {
   .header {
-    background: none;
+    /* background: none; */
   }
 }
 
@@ -857,7 +890,7 @@ p {
 
 @media screen and (max-width: 1315px) {
   .dropbtn {
-    display: flex;
+    display: inherit;
   }
 }
 
@@ -879,10 +912,11 @@ p {
   background: url(./img/menu.svg);
   height: 25px;
   width: 25px;
-  padding: 13px;
+  margin-top: 14px;
   transform: scale(3);
   border: cadetblue;
   size: 100px;
+  margin-left: auto;
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -899,7 +933,7 @@ p {
   margin-left: -123px;
   display: grid;
   position: absolute;
-  background-color: #f1f1f1;
+  background-color: #ffffff;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
@@ -924,12 +958,3 @@ p {
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {}
-
-
-.Item{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-}
