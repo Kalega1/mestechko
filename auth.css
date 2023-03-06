@@ -1,181 +1,213 @@
 * {
-    font-family: Montserrat, sans-serif;
-    color: rgb(0, 0, 0);
-    box-sizing: border-box;
+  font-family: Montserrat, sans-serif;
+  color: dimgrey;
+  box-sizing: border-box;
+}
 
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.morning {
+  background-image: url("img/background.svg");
+  background-position: center;
+  background-size: cover;
+}
+.night {
+  background-image: url("img/night.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 .form {
-    width: 30%;
-    height: 30%;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 30px #C2C2C2;
-    background-color: #ffffff;
-
+  min-width: 300px;
+  width: 30%;
+  min-height: 250px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 30px #c2c2c2;
+  background-color: #ffffff;
+  position: relative;
+  z-index: 2;
 }
 
 .center {
-    margin: 250px auto auto;
-    display: block;
+  margin: 0 auto;
+  display: block;
 }
 
 h2 {
-    text-align: center;
-    font-size: 30px;
-    font-weight: 800;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 800;
 }
 
 input,
 #type {
-    width: 100%;
-    height: 30px;
+  width: 100%;
+  height: 30px;
 }
 
-
 form button {
-    width: 100%;
-    height: 30px;
-    border: none;
-    border-radius: 5px;
-    background: color(srgb 0.5654 0.8917 0.6629);
-    font-size: 15px;
-    cursor: pointer;
+  width: 100%;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  background: lightgrey;
+  font-size: 15px;
+  cursor: pointer;
 }
 
 .container {
-    display: block;
-    margin: 100px auto;
-    width: 30%;
-    height: 620px;
-    border: 1px solid white;
-    border-radius: 10px;
-    box-shadow: 0 0 30px #C2C2C2;
-    padding: 18px;
-    position: relative;
-    background-image: url(img/background.svg);
-    background-size: cover;
+  display: block;
+  margin: 100px auto;
+  width: 30%;
+  height: 620px;
+  border: 1px solid white;
+  border-radius: 10px;
+  box-shadow: 0 0 30px #c2c2c2;
+  padding: 18px;
+  position: relative;
+  background-image: url(img/background.svg);
+  background-size: cover;
 }
 
 #todo-container {
-    height: 510px;
-    overflow: scroll;
-    padding: 10px;
+  height: 510px;
+  overflow: scroll;
+  padding: 10px;
 }
 
-
 .buttons {
-    position: absolute;
-    bottom: 0;
-    padding: 10px;
-
+  position: absolute;
+  bottom: 0;
+  padding: 10px;
 }
 
 .buttons button {
-    width: 115px;
+  width: 115px;
 }
 
 .button1 {
-    background-color: #c1bdbd;
-    /* Green */
+  background-color: #c1bdbd; /* Green */
 }
 
 .button2 {
-    background-color: coral;
-    /* Green */
+  background-color: coral; /* Green */
 }
 
 .button3 {
-    background-color: green;
+  background-color: green;
 }
 
 .hover_button {
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .hover_button:hover {
-    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 li {
-    list-style: none;
-    display: flex;
-    position: relative;
+  list-style: none;
+  display: flex;
+  position: relative;
 }
 
-
 .button_div {
-    position: absolute;
-    right: 0;
+  position: absolute;
+  right: 0;
 }
 
 .delete {
-    background-color: #f8ac8b;
+  background-color: #f8ac8b;
 }
 
 .finish {
-    background-color: #7bc97b;
+  background-color: #7bc97b;
 }
 
 .todo-form input {
-    outline: none;
+  outline: none;
 }
 
 .completed {
-    text-decoration: line-through;
-    color: blue;
+  text-decoration: line-through;
+  color: blue;
 }
 
 .sign-out {
-    text-align: right;
+  text-align: right;
 }
 
 .sign-out-button {
-    height: 40px;
-    border: none;
-    border-radius: 5px;
-    padding: 10px;
-    font-size: 15px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    background-color: indianred;
-    color: white;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 15px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: indianred;
+  color: white;
 }
 
 .button {
-    height: 30px;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    padding: 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 13px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
 }
-
-.background {
+/* .background{
     background-image: url(img/background.svg);
-    z-index: -1;
+    z-index: -1; 
     background-size: cover;
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
     background-position: center;
-}
+} */
+@media (max-width: 800px) {
+  .form {
+    min-height: 250px;
+    width: 320px;
 
-@media (max-width:800px) {
-    .form {
-        width: 320px;
-        height: 30%;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 0 30px #C2C2C2;
-        background-color: #ffffff;
-        position: relative;
-    }
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px #c2c2c2;
+    background-color: #ffffff;
+    position: relative;
+  }
 }
